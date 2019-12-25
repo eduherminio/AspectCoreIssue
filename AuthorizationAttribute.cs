@@ -12,6 +12,7 @@ namespace AspectCoreIssue
         {
             var service = (IUsedInInterceptor)context.ServiceProvider.GetService(typeof(IUsedInInterceptor));
 
+            // Invocation works if the following line is commented
             var failsInThisInvocation = service.Get();
 
             await next(context).ConfigureAwait(false);

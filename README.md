@@ -4,4 +4,4 @@ Repro steps:
 
 * `dotnet run`
 
-* Access http://localhost:1234/api/sample in browser.
+* Hit http://localhost:1234/api/sample
